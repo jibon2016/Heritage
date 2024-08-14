@@ -16,6 +16,10 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'image-overlay' : 'linear-gradient(180deg, rgba(0, 0, 0, 0.72) 32.39%, rgba(0, 0, 0, 0.72) 32.39%, rgba(0, 0, 0, 0.72) 32.39%',
+                'overlay' : 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 32.39%, rgba(0, 0, 0, 0.88) 100%)'
+            },
         },
     },
 

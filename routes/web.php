@@ -1,18 +1,34 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchFilterController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('Welcome');
 });
+Route::get('/find-property', function () {
+    return Inertia::render('FindProperty');
+});
+Route::get('/search-result', function () {
+    return Inertia::render('SearchResult');
+});
+Route::get('/bidder-profile', function () {
+    return Inertia::render('BidderProfile');
+});
+Route::get('/owner-profile', function () {
+    return Inertia::render('OwnerProfile');
+});
+Route::post('/search',[SearchFilterController::class, 'searchFilter']);
+
+
+Route::get('/single-property', function () {
+    return Inertia::render('SingleProperty');
+});
+
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

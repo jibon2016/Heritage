@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('location');
             $table->decimal('value_min');
             $table->decimal('value_max');
+            $table->string('type');
             $table->string('beds');
             $table->string('bath');
             $table->string('balcony');

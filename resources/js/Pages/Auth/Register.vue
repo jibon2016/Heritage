@@ -24,7 +24,7 @@ const submit = () => {
     <GuestLayout>
         <Head title="Register" />
 
-        <form @submit.prevent="submit">
+        <form @submit.prevent="submit" class="max-w-[400px] mx-auto py-20">
             <div>
                 <InputLabel for="name" value="Name" />
 
