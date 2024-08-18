@@ -26,6 +26,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.0.0
       with:
         server: ftpupload.net
-        username: ${{ secrets.jibon_ftp_username }}
-        password: ${{ secrets.jibon_ftp_password }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
         server-dir: /home/vol17_1/infinityfree.com/if0_37099085/
